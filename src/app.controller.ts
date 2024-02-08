@@ -1,4 +1,4 @@
-import * as Sentry from '@sentry/node';
+import * as Sentry from '@sentry/node-experimental';
 import { Controller, Get, HttpException } from '@nestjs/common';
 import { AppService } from './app.service';
 
