@@ -31,7 +31,7 @@ import { SentryModule } from './sentry/sentry.module';
       enableTracing: true, //process.env.NODE_ENV !== 'development',
 
       // Enable debug mode to log event submission
-      debug: process.env.NODE_ENV === 'development',
+      debug: true, // process.env.NODE_ENV === 'development',
 
       // Called for message and error events
       beforeSend(event) {

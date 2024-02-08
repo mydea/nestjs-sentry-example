@@ -11,7 +11,7 @@ export class AppController {
     // Start a child span for the request handler
     return Sentry.startSpan(
       {
-        op: 'http.server',
+        op: 'function',
         name: `AppController.getHello()`,
       },
       () => this.appService.getHello(),
